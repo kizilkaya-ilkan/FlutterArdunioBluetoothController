@@ -30,7 +30,7 @@ class _MainPageState extends ConsumerState<MainPage> {
   @override
 
 
-  int sensor=0;
+  int sensor=1;
   int sensor1=0;
   int sensor2=0;
   int sensor3=0;
