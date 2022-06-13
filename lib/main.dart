@@ -309,7 +309,7 @@ class _MainPageState extends ConsumerState<MainPage> {
                           countColor: Colors.white,
                           buttonColor: Colors.white,
                           progressColor: Colors.white,
-                        ),
+                        ), 
                         header: new Text(
                           "Sensor 3",
                           style: new TextStyle(
@@ -323,6 +323,7 @@ class _MainPageState extends ConsumerState<MainPage> {
                       ),
                     ],
                   ),
+                  
                 ),
               ]),
         ),
