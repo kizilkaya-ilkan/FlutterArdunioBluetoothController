@@ -91,7 +91,7 @@ packages:
     source: hosted
     version: "0.8.0"
   flutter_bluetooth_serial:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_bluetooth_serial
       url: "https://pub.dartlang.org"

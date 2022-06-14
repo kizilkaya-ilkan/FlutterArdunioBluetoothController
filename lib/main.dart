@@ -15,8 +15,8 @@ final veriyol1 = StateProvider<String?>((ref) => null);
 
 class ClassName {}
 
-String Sens0 = "00:19:10:09:30:FD";
-String Sens1 = "98:D3:41:F9:6D:43";
+String Sens0 = "00:20:10:00:0B:AE";
+String Sens1 = "00:19:10:09:30:FD";
 
 void main() async {
   runApp(ProviderScope(child: MainPage()));
@@ -309,7 +309,7 @@ class _MainPageState extends ConsumerState<MainPage> {
                           countColor: Colors.white,
                           buttonColor: Colors.white,
                           progressColor: Colors.white,
-                        ), 
+                        ),
                         header: new Text(
                           "Sensor 3",
                           style: new TextStyle(
@@ -323,7 +323,6 @@ class _MainPageState extends ConsumerState<MainPage> {
                       ),
                     ],
                   ),
-                  
                 ),
               ]),
         ),
@@ -346,6 +345,7 @@ class _MainPageState extends ConsumerState<MainPage> {
           print('Disconnecting by local host');
         }
       }).onDone(() {
+        connection.finish();
         print('Disconnected by remote request');
       });
     } catch (exception) {
